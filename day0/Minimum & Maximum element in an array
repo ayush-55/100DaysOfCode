@@ -1,0 +1,19 @@
+# Method 1
+
+ar=[int(i) for i in input("Enter the Array").split()]
+max=ar[0]
+min=ar[0]
+for i in range(len(ar)-1):
+    if ar[i] > max:
+        max = ar[i]
+    if ar[i] < min:
+        min = ar[i]
+print("Maximum Elemnt",max)
+print("Minimum Element",min)
+
+
+# Method 2
+
+arr=[int(x) for x in input("Enter the Array").split()]
+print("Minimum Element is",min(arr))
+print("Maximum Element is",max(arr))
